@@ -1,11 +1,22 @@
+import type { User } from './types'
+import UserDisplay from './components/UserDisplay'
+
 function App() {
+  const users: User[] =[{
+    name: "Sabin Adams",
+    messages: [{
+      body: 'Hey there!'
+    }, {
+      body: 'Whats up'
+    }]
+  }]
 
   return (
-<div className="bg-zinc-800 flex-col h-screen w-full flex items-center justify-center p-4">
-  <h2 className="text-4xl text-yellow-500">
-    Hello World!
-  </h2>
-</div>
+  <div className="bg-zinc-800 flex-col h-screen w-full flex items-center justify-center p-4">
+    {
+      users.map((user, index) => <UserDisplay user={user} key={index}/>)
+    }
+  </div>
   )
 }
 
