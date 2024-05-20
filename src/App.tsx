@@ -13,7 +13,9 @@ function App() {
       results.data?.users.map((user, index) => <UserDisplay user={user} key={index}/>)
     }
     <div>
-      <p>View the GraphQL Yoga server!</p>
+      <a href="https://graphql-api-t0ts.onrender.com/graphql" className='text-white flex-col'>
+        View the GraphQL Yoga server!
+      </a>
     </div>
   </div>
   )
