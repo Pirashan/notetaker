@@ -15,7 +15,7 @@ function App() {
     <div>
       <a 
       href="https://graphql-api-t0ts.onrender.com/graphql" 
-      className='text-white flex-col flex items-center justify-center p-4'>
+      className='text-white flex-col flex items-center justify-center m-8 hover:underline'>
         View the GraphQL Yoga server!
       </a>
     </div>
