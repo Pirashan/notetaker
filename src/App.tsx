@@ -12,6 +12,9 @@ function App() {
     {
       results.data?.users.map((user, index) => <UserDisplay user={user} key={index}/>)
     }
+    <div>
+      <p>View the GraphQL Yoga server!</p>
+    </div>
   </div>
   )
 }
