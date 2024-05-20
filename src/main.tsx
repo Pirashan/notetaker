@@ -5,7 +5,7 @@ import './index.css'
 import { createClient, Provider, cacheExchange, fetchExchange } from 'urql'
 
 const client = createClient({
-  url: "http://localhost:4000/graphql",
+  url: import.meta.env.VITE_API_URL || "http://localhost:4000/graphql",
   exchanges: [cacheExchange, fetchExchange],
 })
 
